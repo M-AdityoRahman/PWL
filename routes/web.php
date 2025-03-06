@@ -6,6 +6,8 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ArticleController;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\PhotoController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,3 +23,4 @@ Route::get('/hello', [WelcomeController::class,'hello']);
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/about', [AboutController::class, 'index']);
 Route::get('/articles/{id?}', [ArticleController::class, 'show']);
+Route::resource('photos', PhotoController::class);
