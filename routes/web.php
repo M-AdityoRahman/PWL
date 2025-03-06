@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/welcome', function () {
-    return 'Selamat Datang';
+Route::get('/about', function () {
+    return 'Muhammad Adityo Rahman <br> Nim.2341720177';
 
 });
