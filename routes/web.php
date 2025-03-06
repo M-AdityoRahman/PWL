@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/about', function () {
-    return 'Muhammad Adityo Rahman <br> Nim.2341720177';
+Route::get('/user/{name}', function ($name) {
+    return 'Nama Saya ' .$name;
 
 });
