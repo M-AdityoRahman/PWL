@@ -23,6 +23,6 @@ class WelcomeController extends Controller
         }
     }
     public function greeting(){
-        return view('blog.hello', ['name' => 'Andi']);
+        return view('blog.hello', ['name' => 'Adityo']);
     }    
 }
