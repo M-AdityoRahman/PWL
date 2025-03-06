@@ -22,5 +22,7 @@ class WelcomeController extends Controller
             return 'Halaman Daftar Artikel';
         }
     }
-    
+    public function greeting(){
+        return view('blog.hello', ['name' => 'Andi']);
+    }    
 }
